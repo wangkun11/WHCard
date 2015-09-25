@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/item_co_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/store" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_rent_house_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家名称" />
+
+        <TextView
+            android:id="@+id/item_co_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动信息" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/item_co_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家地址" />
+
+            <TextView
+                android:id="@+id/item_co_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系电话" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
