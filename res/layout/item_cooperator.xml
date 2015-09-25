@@ -19,7 +19,8 @@
             android:id="@+id/item_rent_house_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="商家名称" />
+            android:text="商家名称" 
+            android:textColor="#2E8B57"/>
 
         <TextView
             android:id="@+id/item_co_info"
@@ -36,7 +37,8 @@
                 android:id="@+id/item_co_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="商家地址" />
+                android:text="商家地址"                 
+                android:textColor="#A0522D"/>
 
             <TextView
                 android:id="@+id/item_co_tel"
