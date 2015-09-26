@@ -17,9 +17,9 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:layout_centerInParent="true"
-        android:text="我的房源"
+        android:text="需求列表"
         android:textSize="20sp"
-        android:textColor="#8B4513"
+        android:textColor="#000000"
         android:typeface="monospace"/>
     
 </RelativeLayout>
