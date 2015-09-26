@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <!-- 找房子 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="找房子"
+            android:textColor="#FFFF8833"
+            android:textSize="23sp"
+            android:typeface="monospace" />
+
+        <View
+            android:layout_width="65dp"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFF8833" />   
+            
+        
+            
+        <TableLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+             <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical" >              
+              <ImageButton
+                 android:id="@+id/rent_btn_source"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/house1" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="房源列表"
+                  android:textSize="15sp"
+                  android:textColor="#FF6347" />
+            </LinearLayout>
+            
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical" >              
+              <ImageButton
+                 android:id="@+id/rent_btn_publishdemand"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/house2" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="发布需求"
+                  android:textSize="15sp"
+                  android:textColor="#FF6347" />
+            </LinearLayout>
+            
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical" >              
+              <ImageButton
+                 android:id="@+id/rent_btn_mydemand"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/house3" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="我的需求"
+                  android:textSize="15sp"
+                  android:textColor="#FF6347" />
+            </LinearLayout>                
+            </TableRow>      
+        </TableLayout>            
+        
+
+    <!-- 找租客 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="找租客"
+            android:textColor="#FFFF8833"
+            android:textSize="23sp"
+            android:typeface="monospace" />
+
+        <View
+            android:layout_width="65dp"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFF8833" />
+        
+        <TableLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+             <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical" >              
+              <ImageButton
+                 android:id="@+id/rent_btn_demand"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/house4" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="需求列表"
+                  android:textSize="15sp"
+                  android:textColor="#FF6347" />
+            </LinearLayout>
+            
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical" >              
+              <ImageButton
+                 android:id="@+id/rent_btn_publishsource"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/house5" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="发布房源"
+                  android:textSize="15sp"
+                  android:textColor="#FF6347" />
+            </LinearLayout>
+            
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical" >              
+              <ImageButton
+                 android:id="@+id/rent_btn_myhouse"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/house6" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="我的房源"
+                  android:textSize="15sp"
+                  android:textColor="#FF6347" />
+            </LinearLayout>                
+            </TableRow>      
+        </TableLayout>
+
+        
+    </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WHCard1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_publish_demand">PublishDemandActivity</string>
+    <string name="title_activity_house_content">HouseContentActivity</string>
+    <string name="title_activity_standard_info">StandardInfoActivity</string>
+    <string name="title_activity_edit_info">EditInfoActivity</string>
+    <string name="title_activity_demand_conten">DemandContenActivity</string>
+    <string name="title_activity_my_house">MyHouseActivity</string>
+    <string name="title_activity_my_demand">MyDemandActivity</string>
+    <string name="title_activity_alter_house">AlterHouseActivity</string>
+    <string name="title_activity_auth">AuthActivity</string>
+    <string name="title_activity_show_auth">ShowAuthActivity</string>
+    <string name="title_activity_auth_disagree">AuthDisagreeActivity</string>
+    <string name="title_activity_house_image_wall">HouseImageWallActivity</string>
+    <string name="title_activity_house_image">HouseImageActivity</string>
+
+</resources>

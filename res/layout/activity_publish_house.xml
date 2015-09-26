@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:shrinkColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="地        址  "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="洪山光谷"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="小        区   "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="金域广场"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="户        型  "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="两室一厅"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="出租方式   "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="整租"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="租金(/月)  "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_rental"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1500"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="面        积   "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="90平方米"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="楼        层  "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12/30层"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="装修情况  "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_decorate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="精装房"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/publish_house_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:stretchColumns="1,2,3,4" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="房屋配置     "
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/publish_house_config_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="床"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/publish_house_config_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电视"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/publish_house_config_broadband"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="宽带"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/publish_house_config_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="空调"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" " />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冰箱"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="洗衣机"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热水器"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="煤气"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" " />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家具"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="沙发"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微波炉"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暖气"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:shrinkColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="标        题    "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="两室一厅,家电齐全,交通便利"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="描        述  "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_describle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="        房子位于鲁巷，在光谷步行街德国风情街上；交通便利，附近有光谷广场地铁站，珞喻路光谷广场，民族大道光谷广场等车站；购物便捷，有家乐福，大洋百货等购物广场；光谷核心地段，逛街购物一条龙；家电齐全，拎包即可入住。"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="联 系 人  "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_contactor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手 机 号  "
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/publish_house_tell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="13426882688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传图片:"
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+
+        <GridView
+            android:id="@+id/publish_house_gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="#EFDFDF"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </GridView>
+
+        <Button
+            android:id="@+id/publish_house_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="提 交"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>
