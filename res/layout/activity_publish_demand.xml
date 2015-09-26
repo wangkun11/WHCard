@@ -146,6 +146,7 @@
                 android:id="@+id/publish_demand_submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle_sure"
                 android:text="提 交" />
         </TableLayout>
     </LinearLayout>

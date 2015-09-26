@@ -365,7 +365,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="提 交"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:background="@drawable/buttonstyle_sure" />
     </LinearLayout>
 
 </ScrollView>
