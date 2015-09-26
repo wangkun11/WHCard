@@ -47,6 +47,7 @@ public class AuthActivity extends Activity implements OnItemSelectedListener,OnC
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.activity_auth);
 
 		auth_value = (EditText) findViewById(R.id.auth_value);

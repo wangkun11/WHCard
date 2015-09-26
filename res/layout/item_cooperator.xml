@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/item_co_image"
-        android:layout_width="90dp"
-        android:layout_height="80dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:src="@drawable/store" />
 
     <LinearLayout
@@ -19,19 +19,13 @@
             android:id="@+id/item_rent_house_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="商家名称" 
-            android:textColor="#2E8B57"
-            android:textSize="18sp"
-            android:padding="3dp"/>
+            android:text="商家名称" />
 
         <TextView
             android:id="@+id/item_co_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:text="活动信息" 
-            android:textSize="16sp"
-            android:padding="3dp"/>
+            android:text="活动信息" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -42,20 +36,13 @@
                 android:id="@+id/item_co_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="商家地址"                 
-                android:textColor="#FF4500"
-                android:textSize="16sp"
-                android:padding="3dp"/>
+                android:text="商家地址" />
 
             <TextView
                 android:id="@+id/item_co_tel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="联系电话"     
-                android:paddingLeft="5dp"        
-                android:textColor="#FF4500"
-                android:textSize="16sp"
-                android:padding="3dp"/>
+                android:text="联系电话" />
         </LinearLayout>
     </LinearLayout>
 

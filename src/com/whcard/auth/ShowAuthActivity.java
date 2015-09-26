@@ -100,8 +100,9 @@ public class ShowAuthActivity extends Activity implements OnClickListener{
 			break;
         case R.id.whcard_auth_disagree:
 			Intent intent=new Intent(ShowAuthActivity.this,AuthDisagreeActivity.class);
-			intent.putExtra("whcard_id", whcard_id+"");
+			intent.putExtra("whcard_id", whCard.getSfp_id());
 			intent.putExtra("auther_id", Util.getUserInfo(ShowAuthActivity.this, "userId"));
+			
 			startActivity(intent);
 			break;
 
@@ -119,7 +120,8 @@ public class ShowAuthActivity extends Activity implements OnClickListener{
 			JSONObject authObject=new JSONObject();
 			try {
 				authObject.put("auther_id", Util.getUserInfo(ShowAuthActivity.this, "userId"));
-				authObject.put("whcard_id", whcard_id);
+				authObject.put("whcard_id", whCard.getSfp_id());
+				
 				authObject.put("result", "agree");
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block

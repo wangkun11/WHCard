@@ -2,6 +2,7 @@ package com.whcard.info;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import com.whcard.main.R;
 import com.whcard.net.GetUrl;
 import com.whcard.net.HttpUtil;
@@ -18,13 +19,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class ShowInfoActivity extends Activity implements OnClickListener{
 	
 	//按钮
-	private TextView btBack;
+	private ImageView btBack;
 	private TextView btEdit;
 	
 	//认证情况
@@ -72,7 +74,7 @@ public class ShowInfoActivity extends Activity implements OnClickListener{
 	}
 	private void initView() {
 		//按钮
-		btBack=(TextView) findViewById(R.id.standard_info_back);
+		btBack=(ImageView) findViewById(R.id.standard_info_back);
 		btEdit=(TextView) findViewById(R.id.standard_info_edit);
 		
 		//认证情况
