@@ -17,7 +17,7 @@ public class WuhanCard implements Serializable {
 	private String whcard_nation;
 	private String whcard_naplace;
 	private int whcard_page_num;
-	private Standard_Floating_Population sfp_id;
+	private String sfp_id;
 	
 	public int getWhcard_page_num() {
 		return whcard_page_num;
@@ -79,11 +79,13 @@ public class WuhanCard implements Serializable {
 	public void setWhcard_tel(String whcard_tel) {
 		this.whcard_tel = whcard_tel;
 	}
-	public Standard_Floating_Population getSfp_id() {
+
+	public String getSfp_id() {
 		return sfp_id;
 	}
-	public void setSfp_id(Standard_Floating_Population sfp_id) {
+
+	public void setSfp_id(String sfp_id) {
 		this.sfp_id = sfp_id;
 	}
-
+	
 }
