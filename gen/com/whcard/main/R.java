@@ -364,20 +364,21 @@ public final class R {
         public static final int header_info_edit=0x7f03001d;
         public static final int header_info_show=0x7f03001e;
         public static final int header_reset_psd=0x7f03001f;
-        public static final int item_cooperator=0x7f030020;
-        public static final int item_grid=0x7f030021;
-        public static final int item_grid_imgwall=0x7f030022;
-        public static final int item_house_demand=0x7f030023;
-        public static final int item_house_source=0x7f030024;
-        public static final int item_imagewall=0x7f030025;
-        public static final int jpush_richpush_actionbar_layout=0x7f030026;
-        public static final int loadview_footer_layout=0x7f030027;
-        public static final int refresh_header=0x7f030028;
-        public static final int start_1=0x7f030029;
-        public static final int start_2=0x7f03002a;
-        public static final int start_3=0x7f03002b;
-        public static final int transfer_tab=0x7f03002c;
-        public static final int transfer_top=0x7f03002d;
+        public static final int header_wyhouse=0x7f030020;
+        public static final int item_cooperator=0x7f030021;
+        public static final int item_grid=0x7f030022;
+        public static final int item_grid_imgwall=0x7f030023;
+        public static final int item_house_demand=0x7f030024;
+        public static final int item_house_source=0x7f030025;
+        public static final int item_imagewall=0x7f030026;
+        public static final int jpush_richpush_actionbar_layout=0x7f030027;
+        public static final int loadview_footer_layout=0x7f030028;
+        public static final int refresh_header=0x7f030029;
+        public static final int start_1=0x7f03002a;
+        public static final int start_2=0x7f03002b;
+        public static final int start_3=0x7f03002c;
+        public static final int transfer_tab=0x7f03002d;
+        public static final int transfer_top=0x7f03002e;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
