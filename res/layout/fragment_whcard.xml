@@ -1,57 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"  > 
+    android:orientation="vertical" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" > 
+    
+    <View 
+        android:id="@+id/line01"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#808080"/>
 
     <com.loopj.android.image.SmartImageView
         android:id="@+id/fra_whcard_cardimg"
-        android:layout_width="fill_parent"
-        android:layout_height="200dp"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:layout_margin="15dp"
-        android:src="@drawable/img_whcard" />
-
-    <LinearLayout
+        android:src="@drawable/img_whcard" 
+        android:layout_below="@id/line01"/>
+    <View 
+        android:id="@+id/line02"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="50dp"
-        android:background="#ffffff">
-
-        <com.loopj.android.image.SmartImageView
-            android:id="@+id/fra_whcard_twodimcode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_tdcode"
-            android:layout_marginRight="20dp" />
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" 
-            android:layout_gravity="center"
-            android:gravity="center_vertical">
-
+        android:layout_height="2dp"
+        android:background="#808080" 
+        android:layout_below="@id/fra_whcard_cardimg"/>    
+    <View 
+        android:id="@+id/line03"
+        android:layout_width="2dp"
+        android:layout_height="335dp"
+        android:background="#808080" />
+    <View 
+        android:id="@+id/line05"
+        android:layout_width="2dp"
+        android:layout_height="335dp"
+        android:background="#808080" 
+        android:layout_alignRight="@id/line01"/>
+    
+    <com.loopj.android.image.SmartImageView
+                android:id="@+id/fra_whcard_twodimcode"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_tdcode"
+                android:layout_below="@id/line02" 
+                android:paddingRight="15dp"/>
+            
+            <View 
+               android:id="@+id/line06"
+               android:layout_width="2dp"
+        	   android:layout_height="122dp"
+        	   android:background="#808080" 
+        	   android:layout_toRightOf="@id/fra_whcard_twodimcode"
+        	   android:layout_alignTop="@id/fra_whcard_twodimcode"/>
+    
             <TextView
+                android:id="@+id/text01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="20dp"
                 android:text="认证状态："
-                android:textSize="22sp" />
+                android:textSize="22sp"
+        	   android:layout_toRightOf="@id/line06"
+        	   android:layout_alignTop="@id/fra_whcard_twodimcode"
+        	   android:paddingLeft="20dp" />
 
             <TextView
                 android:id="@+id/fra_whcard_authstate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:paddingTop="20dp"
                 android:text="未认证" 
                 android:textSize="22sp"
-                android:textColor="#CC0000"/>
+                android:textColor="#CC0000"
+                android:layout_below="@id/text01"
+        	   android:layout_alignLeft="@id/text01"
+        	   android:paddingLeft="20dp" />
+    <View 
+        android:id="@+id/line07"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#808080" 
+        android:layout_below="@id/fra_whcard_twodimcode"
+        android:paddingTop="5dp"/> 
 
-        </LinearLayout>
+            
 
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
