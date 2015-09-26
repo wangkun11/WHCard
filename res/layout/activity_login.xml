@@ -151,12 +151,12 @@
         <Button
             android:id="@+id/login__reset_psd"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            
+            android:layout_height="wrap_content"            
             android:text="忘记密码"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:background="@drawable/buttonstyle_login" />       
+            android:background="@drawable/buttonstyle_login"
+            android:layout_weight="1" />       
         <Button
             android:id="@+id/login_btn"
             android:layout_width="wrap_content"
@@ -166,7 +166,8 @@
             android:layout_marginRight="10dp"
             android:textColor="#000000"
             android:textSize="16sp"            
-            android:background="@drawable/buttonstyle_login" />
+            android:background="@drawable/buttonstyle_login1" 
+            android:layout_weight="2"/>
         <Button
             android:id="@+id/login__regist"
             android:layout_width="wrap_content"
@@ -174,7 +175,8 @@
             android:background="@drawable/buttonstyle_login"
             android:text="注册"
             android:textColor="#000000"
-            android:textSize="16sp" /> 
+            android:textSize="16sp"
+            android:layout_weight="1" /> 
     </LinearLayout>
 
 </RelativeLayout>

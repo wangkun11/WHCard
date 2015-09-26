@@ -44,7 +44,8 @@ public class AuthDisagreeActivity extends Activity {
 		auth_disagree_submit=(Button) findViewById(R.id.auth_disagree_submit);
 		
 		auther_id=getIntent().getStringExtra("auther_id");
-		whcard_id=getIntent().getStringExtra("whcard_id");
+		whcard_id=getIntent().getStringExtra("whcard_id");	
+		content=auth_disagree_content.getText().toString();
 		
 		auth_disagree_submit.setOnClickListener(new OnClickListener() {			
 			@Override
@@ -60,7 +61,6 @@ private class AuthDisagreeAsyncTask extends AsyncTask<String, Integer, String>{
 		@Override
 		protected void onPreExecute() {
 			progressDialog=ProgressDialog.show(AuthDisagreeActivity.this, "", "正在认证登录，请稍等。。。");	
-			content=auth_disagree_content.getText().toString();
 			JSONObject authObject=new JSONObject();
 			try {
 				authObject.put("auther_id", auther_id);
