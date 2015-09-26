@@ -3,15 +3,15 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/bg3"
-    android:orientation="vertical" 
-    android:gravity="center">
-    
-    <ImageView 
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:paddingTop="60dp"
-        android:paddingBottom="90dp"
-        android:src="@drawable/logo"/>
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="220dp"
+        android:src="@drawable/logo" />
 
     <Button
         android:id="@+id/id_start_button"
@@ -20,6 +20,6 @@
         android:background="@drawable/buttonstyle_enter"
         android:text="进入武汉名片"
         android:textColor="#ffffff"
-        android:textSize="15sp"/>
+        android:textSize="18sp" />
 
 </LinearLayout>

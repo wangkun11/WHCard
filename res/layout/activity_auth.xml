@@ -1,12 +1,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
+    <include layout="@layout/header_auth_main"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="请选择查询条件：" />
+        android:text="请选择查询条件：" 
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#DC143C"/>
 
     <Spinner
         android:id="@+id/auth_spinner"
@@ -16,7 +20,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="请输入查询内容：" />
+        android:text="请输入查询内容：" 
+        android:textSize="20sp"
+        android:textColor="#DC143C"
+        android:paddingTop="15dp"/>
 
     <EditText
         android:id="@+id/auth_value"
@@ -32,6 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="查询" 
+        android:layout_gravity="right"
+        android:layout_marginTop="25dp"
         android:background="@drawable/buttonstyle_sure"/>
 
 </LinearLayout>

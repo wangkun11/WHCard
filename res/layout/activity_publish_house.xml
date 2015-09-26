@@ -9,6 +9,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
+        <include layout="@layout/header_publish_house_resource" />
+
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -364,9 +366,9 @@
             android:id="@+id/publish_house_submit"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle_sure"
             android:text="提 交"
-            android:textSize="16sp"
-            android:background="@drawable/buttonstyle_sure" />
+            android:textSize="16sp" />
     </LinearLayout>
 
 </ScrollView>

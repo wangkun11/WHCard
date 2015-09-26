@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+    <include layout="@layout/header_demand_list" />
     <com.whcard.myview.LoadListView
         android:id="@+id/rent_demand_listview"
         android:layout_width="fill_parent"
