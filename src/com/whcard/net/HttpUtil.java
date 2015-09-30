@@ -44,14 +44,15 @@ public class HttpUtil {
 		try {
 			rsp = httpClient.execute(httpPost);
 		} catch (ClientProtocolException e) {
-			returnValue="webserver is stop";
+			returnValue="webserver is stop:ClientProtocolException";
 			Log.d("returnValue", returnValue);
 			return returnValue;
 		} catch (IOException e) {
-			returnValue="webserver is stop";
+			returnValue="webserver is stop:IOException"+e.getLocalizedMessage();
 			Log.d("returnValue", returnValue);
 			return returnValue;
 		}
+		Log.d(actionName + "服务器状态码为：", rsp.getStatusLine().getStatusCode()+"");
 		if (rsp.getStatusLine().getStatusCode()== HttpStatus.SC_OK) {
 			HttpEntity httpEntity = rsp.getEntity();
 			try {
@@ -62,7 +63,7 @@ public class HttpUtil {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}			
+			}
 		}else {
 			returnValue="webserver is error";
 			Log.d("服务器错误：", "服务器异常！");

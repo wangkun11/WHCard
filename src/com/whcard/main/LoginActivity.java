@@ -215,22 +215,23 @@ public class LoginActivity extends Activity implements OnClickListener{
 					return;
 				}
 			    Log.d("isFullRegister", isFullRegister+"");
-				Log.d("state", state);
+/*				Log.d("state", state);
 				Log.d("userId", userId);
 				Log.d("whCardPath", whCardPath);
-				Log.d("twoDimCodePath", twoDimCodePath);
-				Log.d("存储登录信息", "用户名："+userName+"-密码："+password+"-用户类型："+userType+"-用户Id"+userId+"-是否完全注册："+isFullRegister);
+				Log.d("twoDimCodePath", twoDimCodePath);*/
+				Log.d("存储登录信息", "用户名："+userName+"-密码："+password+"-用户类型："
+				+userType+"-用户Id"+userId+"-是否完全注册："+isFullRegister+"-是否认证："+isAuthorize);
 				
 				//首先判断是否登录正确，
 				if (ResultStateCode.LOG_SUCCESS.equals(state)) {
 					//若是授权人，则登录到授权人界面，否则到主界面
 					if (userType==UserType.Authorizer) {
-						Util.saveUserInfo(LoginActivity.this,userName,password,userType,userId,isFullRegister,null);
+						Util.saveUserInfo(LoginActivity.this,userName,password,userType,userId,isFullRegister,isAuthorize);
 						Intent intent = new Intent(LoginActivity.this, AuthActivity.class);
 						startActivity(intent);
 						finish();
 					} else {
-						Util.saveUserInfo(LoginActivity.this,userName,password,userType,userId,isFullRegister,null);
+						Util.saveUserInfo(LoginActivity.this,userName,password,userType,userId,isFullRegister,isAuthorize);
 						
 						//如果是授权人启动到主界面，并传递参数
 						Intent toMainActivity = new Intent(LoginActivity.this, MainActivity.class);

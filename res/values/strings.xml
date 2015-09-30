@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">WHCard1</string>
+    <string name="app_name">武汉名片</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_start">武汉名片</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="title_activity_regist">RegistActivity</string>
     <string name="title_activity_publish_demand">PublishDemandActivity</string>
