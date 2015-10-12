@@ -110,7 +110,7 @@ public class Util {
 		if ("userType".equals(key)) {
 			return userInfo.getInt("userType", 0)+"";
 		}else {
-			return userInfo.getString(key, "error");
+			return userInfo.getString(key, "");
 		}
 	}
 }

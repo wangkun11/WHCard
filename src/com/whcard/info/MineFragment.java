@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -68,7 +69,7 @@ public class MineFragment extends Fragment implements OnClickListener{
 			//如果没有完整注册，提示用户先进行完整注册
 			//先拿到sharePreference中的值
 			String isRegist=Util.getUserInfo(getActivity(), "isRegist");
-			//Log.d("Transferinfo.isRegist", isRegist);
+			Log.d("Transferinfo.isRegist", isRegist);
 			if ("true".equals(isRegist)) {
 				intent=new Intent(getActivity(), ShowInfoActivity.class);
 				startActivity(intent);
