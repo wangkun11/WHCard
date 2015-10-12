@@ -1,6 +1,7 @@
 package com.whcard.rent;
 
 
+import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,13 +39,14 @@ public class MyDemandActivity extends Activity implements OnItemClickListener,IL
 	
 	private int refreshcount=-1;
 	public ProgressDialog progressDialog;
+	public static MyDemandActivity instance;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_my_demand);
-		
+		instance=this;
 		initDate();
 		
 	}

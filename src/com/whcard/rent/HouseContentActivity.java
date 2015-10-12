@@ -94,6 +94,7 @@ public class HouseContentActivity extends Activity implements OnClickListener{
 					intent.putExtras(bundle);
 					startActivity(intent);
 					HouseContentActivity.this.finish();
+					MyHouseActivity.instance.finish();
 				}
 			});
 		}

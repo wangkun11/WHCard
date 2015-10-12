@@ -60,6 +60,8 @@ public class ShowInfoActivity extends Activity implements OnClickListener{
 	//
 	private ProgressDialog progressDialog;
 	private String jsonString;
+
+	String httpReturn;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -152,6 +154,7 @@ public class ShowInfoActivity extends Activity implements OnClickListener{
 
         case R.id.standard_info_edit:
 			Intent intent=new Intent(this,EditInfoActivity.class);
+			intent.putExtra("contentJson",httpReturn);
 			startActivity(intent);
 			break;
 		default:
@@ -181,7 +184,7 @@ public class ShowInfoActivity extends Activity implements OnClickListener{
 		@Override
 		protected String doInBackground(String... params) {
 			// TODO Auto-generated method stub
-			String httpReturn=HttpUtil.httpClient(GetUrl.GetStandardInfo, jsonString);
+			httpReturn=HttpUtil.httpClient(GetUrl.GetStandardInfo, jsonString);
 			return httpReturn;
 		}
 		

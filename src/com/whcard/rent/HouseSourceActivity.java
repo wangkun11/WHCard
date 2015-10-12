@@ -109,7 +109,7 @@ public class HouseSourceActivity extends Activity implements OnItemClickListener
 		protected void onPreExecute() {
 			refreshcount++;
 			jsonString = String.valueOf(refreshcount);
-			progressDialog=ProgressDialog.show(HouseSourceActivity.this, "", "正在获取标准信息，请稍等。。。");
+			progressDialog=ProgressDialog.show(HouseSourceActivity.this, "", "正在获取房源列表，请稍等。。。");
 		}
 		@Override
 		protected String doInBackground(String... params) {

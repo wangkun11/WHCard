@@ -72,10 +72,15 @@ public class DemandContenActivity extends Activity {
 					intent.putExtras(bundle);
 					startActivity(intent);
 					DemandContenActivity.this.finish();
+					MyDemandActivity.instance.finish();
 				}
 			});
 		}
 	}
+	
+	/*private void backOnClick(View view){
+		onBackPressed();
+	}*/
 	
 	private void initView() {
 		content_house_demand_title=(TextView) findViewById(R.id.content_house_demand_title);

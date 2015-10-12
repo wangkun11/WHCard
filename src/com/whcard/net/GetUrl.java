@@ -1,7 +1,7 @@
 package com.whcard.net;
 
 public class GetUrl {
-    public static final String PreUrl="http://192.168.1.58:8080/WebServer/";
+    public static final String PreUrl="http://120.24.241.86:8080/WebServer/";
 
 	
     //final public static String PreUrl="http://192.168.0.110:8080/testStruts2/";    

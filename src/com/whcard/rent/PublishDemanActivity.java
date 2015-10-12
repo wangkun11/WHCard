@@ -155,7 +155,7 @@ public class PublishDemanActivity extends Activity implements OnClickListener{
 			//如果需求发布成功，则跳转到租房需求界面,发布需求按钮变为黑色，租房需求按钮变为绿色
 			if (state.equals("Success")) {			
 				Toast.makeText(PublishDemanActivity.this, "住房需求发布成功！", Toast.LENGTH_SHORT).show();			
-				Intent intent=new Intent(PublishDemanActivity.this,HouseDemandActivity.class);
+				Intent intent=new Intent(PublishDemanActivity.this,MyDemandActivity.class);
 				startActivity(intent);
 				PublishDemanActivity.this.finish();
 			}//否则提示需求发布失败

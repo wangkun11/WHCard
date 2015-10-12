@@ -294,7 +294,7 @@ public class PublishHouseActivity extends Activity implements OnClickListener,On
 			//如果需求发布成功，则跳转到房源界面,发布房源按钮变为黑色，房源按钮变为绿色
 			if (state.equals("Success")) {			
 				Toast.makeText(PublishHouseActivity.this, "住房房源发布成功！", Toast.LENGTH_SHORT).show();
-				Intent intent = new Intent(PublishHouseActivity.this,HouseSourceActivity.class);
+				Intent intent = new Intent(PublishHouseActivity.this,MyHouseActivity.class);
 				startActivity(intent);
 				PublishHouseActivity.this.finish();
 			}//否则提示需求发布失败

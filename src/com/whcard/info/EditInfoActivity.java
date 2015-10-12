@@ -1,14 +1,18 @@
 package com.whcard.info;
 
 import java.io.File;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.whcard.bean.House;
 import com.whcard.bean.Standard_Floating_Population;
 import com.whcard.main.R;
 import com.whcard.net.GetUrl;
 import com.whcard.net.HttpUtil;
+import com.whcard.util.MyJsonObject;
 import com.whcard.util.ResultStateCode;
 import com.whcard.util.Util;
 
@@ -72,7 +76,7 @@ public class EditInfoActivity extends Activity implements OnClickListener{
 	private File imageFile=null;
 	private ProgressDialog progressDialog;
 
-	
+	private String contentString;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -80,7 +84,51 @@ public class EditInfoActivity extends Activity implements OnClickListener{
 		setContentView(R.layout.activity_info_edit);
 		
 		initView();
+		
+		contentString =  getIntent().getStringExtra("contentJson");
+		initData();
 		initListener();
+	}
+	private void initData() {
+		JSONObject resultContent=null;
+		JSONObject jsonObject=null;
+		try {
+			jsonObject=new JSONObject(contentString);
+			resultContent=jsonObject.getJSONObject("content");					
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}			
+		MyJsonObject contentJson=new MyJsonObject(resultContent);
+		// 基本情况
+		et_sfp_name.setText(contentJson.getString("sfp_name"));
+		et_sfp_sex.setText(contentJson.getString("sfp_sex"));
+		et_sfp_nation.setText(contentJson.getString("sfp_nation"));
+		et_sfp_tel.setText(contentJson.getString("sfp_tel"));
+		et_sfp_identity.setText(contentJson.getString("sfp_identity"));
+		et_sfp_native.setText(contentJson.getString("sfp_native"));
+		et_sfp_temporary_residence.setText(contentJson.getString("sfp_temporary_residence"));
+
+		// 其它情况
+		et_sfp_naplace.setText(contentJson.getString("sfp_naplace"));
+		et_sfp_birthdate.setText(contentJson.getString("sfp_birthdate"));
+		et_sfp_politic.setText(contentJson.getString("sfp_politic"));
+		et_sfp_email.setText(contentJson.getString("sfp_email"));
+		
+		try {
+			et_sfp_height.setText(resultContent.getInt("sfp_height")+"cm");
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		et_sfp_blood.setText(contentJson.getString("sfp_blood"));
+		et_sfp_marriage.setText(contentJson.getString("sfp_marriage"));
+		et_sfp_birthplace.setText(contentJson.getString("sfp_birthplace"));
+		et_sfp_gradschool.setText(contentJson.getString("sfp_gradschool"));
+		et_sfp_education.setText(contentJson.getString("sfp_education"));
+		et_sfp_major.setText(contentJson.getString("sfp_major"));
+		et_sfp_graddate.setText(contentJson.getString("sfp_graddate"));		
 	}
 	private void getData(){
 		

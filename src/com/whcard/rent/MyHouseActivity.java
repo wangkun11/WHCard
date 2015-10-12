@@ -38,13 +38,13 @@ public class MyHouseActivity extends Activity implements OnItemClickListener,
 
 	private int refreshcount = -1;
 	private ProgressDialog progressDialog;
-
+	public static MyHouseActivity instance;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_my_house);
-
+		instance=this;
 		initDate();
 	}
 
