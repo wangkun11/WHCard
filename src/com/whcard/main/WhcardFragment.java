@@ -50,9 +50,9 @@ public class WhcardFragment extends Fragment {
 		data=getArguments();
 		/*Log.d("whCardPath", data.getString("whCardPath"));
 		Log.d("twoDimCodePath", data.getString("twoDimCodePath"));*/
-		Log.d("图片url", GetUrl.PreUrl+data.getString("whCardPath"));
-		fra_whcard_cardimg.setImageUrl(GetUrl.PreUrl+data.getString("whCardPath"));
-		fra_whcard_twodimcode.setImageUrl(GetUrl.PreUrl+data.getString("twoDimCodePath"));
+		Log.d("图片url", data.getString("whCardPath"));
+		fra_whcard_cardimg.setImageUrl(data.getString("whCardPath"));
+		fra_whcard_twodimcode.setImageUrl(data.getString("twoDimCodePath"));
 		Log.d("认证状态", Util.getUserInfo(getActivity(), "isAuthorize"));
 		fra_whcard_authstate.setText(
 				Util.getUserInfo(getActivity(), "isAuthorize").equals("true")?"已认证":"未认证");
