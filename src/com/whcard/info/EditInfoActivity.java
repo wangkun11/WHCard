@@ -83,7 +83,10 @@ public class EditInfoActivity extends Activity implements OnClickListener{
 		initListener();
 	}
 	private void getData(){
+		
 		sfp=new Standard_Floating_Population();
+		//是否完全注册
+		sfp.setIsFullRegist(Util.getUserInfo(this, "isRegist"));
 		//获取UserId
 		sfp.setSfp_id(Util.getUserInfo(this, "userId"));
 		

@@ -163,7 +163,7 @@ public class HouseContentActivity extends Activity implements OnClickListener{
 		protected void onPostExecute(String result) {			
 			//取消正在登录显示框		
 			progressDialog.dismiss();
-			if ("serverweb is error".equals(result)) {
+			if ("webserver is error".equals(result)) {
 				Toast.makeText(HouseContentActivity.this, "服务器异常！请稍后重试。。。", Toast.LENGTH_SHORT).show();
 			} else if ("webserver is stop".equals(result)) {
 				Toast.makeText(HouseContentActivity.this, "服务器停止运行！请稍后重试。。。", Toast.LENGTH_SHORT).show();

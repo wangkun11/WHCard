@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 
 public class Standard_Floating_Population implements Serializable{
+	private String isFullRegist;
 	//±ØÌî
 	private String sfp_id;
 	private String sfp_name;
@@ -37,11 +38,18 @@ public class Standard_Floating_Population implements Serializable{
 	private String sfp_major;
 	
 	private String sfp_graddate;//
-	
 	private ArrayList<Education_Experience> sfp_edu;
 	private ArrayList<Work_Experience> sfp_work;
 	
 	
+	
+	
+	public String getIsFullRegist() {
+		return isFullRegist;
+	}
+	public void setIsFullRegist(String isFullRegist) {
+		this.isFullRegist = isFullRegist;
+	}
 	public ArrayList<Education_Experience> getSfp_edu() {
 		return sfp_edu;
 	}

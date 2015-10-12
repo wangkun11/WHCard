@@ -46,7 +46,7 @@ public class MyDemandActivity extends Activity implements OnItemClickListener,IL
 		setContentView(R.layout.activity_my_demand);
 		
 		initDate();
-		showListView();
+		
 	}
 	private void showListView() {
 		if (hdAdapter==null) {
@@ -169,6 +169,7 @@ public class MyDemandActivity extends Activity implements OnItemClickListener,IL
 								list.add(demandBean);
 							}
 							//如果加载到数据，则通知适配器更新界面
+							Log.d("我的需求", list.size()+"条");
 							showListView();
 							demandList=null;
 						} else {
