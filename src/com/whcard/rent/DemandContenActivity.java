@@ -71,6 +71,7 @@ public class DemandContenActivity extends Activity {
 					bundle.putSerializable("demandContent", demand);
 					intent.putExtras(bundle);
 					startActivity(intent);
+					DemandContenActivity.this.finish();
 				}
 			});
 		}

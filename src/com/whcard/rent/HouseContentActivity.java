@@ -93,6 +93,7 @@ public class HouseContentActivity extends Activity implements OnClickListener{
 					bundle.putSerializable("houseContent",house);
 					intent.putExtras(bundle);
 					startActivity(intent);
+					HouseContentActivity.this.finish();
 				}
 			});
 		}

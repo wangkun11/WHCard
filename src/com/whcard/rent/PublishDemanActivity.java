@@ -47,6 +47,7 @@ public class PublishDemanActivity extends Activity implements OnClickListener{
 	String jsonString;
 	
 	private RequirementRental demand;
+	private Boolean flag=false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -59,6 +60,7 @@ public class PublishDemanActivity extends Activity implements OnClickListener{
 		demand = (RequirementRental) getIntent().getSerializableExtra("demandContent");
 		// 如果不为空，则填充到控件上
 		if (demand != null) {
+			flag=true;
 			initData();
 		}else {
 			Log.d("修改需求时，获取到的bundle:", "bundle为空！");
@@ -129,7 +131,12 @@ public class PublishDemanActivity extends Activity implements OnClickListener{
 		@Override
 		protected String doInBackground(String... params) {
 			// TODO Auto-generated method stub
-			String httpReturn=HttpUtil.httpClient(GetUrl.PublishDemand, jsonString);
+			String httpReturn;
+			if (flag) {
+				httpReturn=HttpUtil.httpClient(GetUrl.UpdateDemand, jsonString);
+			}else {
+				httpReturn=HttpUtil.httpClient(GetUrl.PublishDemand, jsonString);
+			}			
 			return httpReturn;
 		}
 		
@@ -150,6 +157,7 @@ public class PublishDemanActivity extends Activity implements OnClickListener{
 				Toast.makeText(PublishDemanActivity.this, "住房需求发布成功！", Toast.LENGTH_SHORT).show();			
 				Intent intent=new Intent(PublishDemanActivity.this,HouseDemandActivity.class);
 				startActivity(intent);
+				PublishDemanActivity.this.finish();
 			}//否则提示需求发布失败
 			else{
 				Toast.makeText(PublishDemanActivity.this, "住房需求发布失败", Toast.LENGTH_SHORT).show();

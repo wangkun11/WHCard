@@ -296,6 +296,7 @@ public class PublishHouseActivity extends Activity implements OnClickListener,On
 				Toast.makeText(PublishHouseActivity.this, "住房房源发布成功！", Toast.LENGTH_SHORT).show();
 				Intent intent = new Intent(PublishHouseActivity.this,HouseSourceActivity.class);
 				startActivity(intent);
+				PublishHouseActivity.this.finish();
 			}//否则提示需求发布失败
 			else{
 				Toast.makeText(PublishHouseActivity.this, "住房需求发布失败", Toast.LENGTH_SHORT).show();
